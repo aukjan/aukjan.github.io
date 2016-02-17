@@ -7,17 +7,17 @@ permalink:        pretty
 
 # Setup
 title:            'Aukjan on Github'
-tagline:          'Another tech blog'
+tagline:          'What am i doing wrong?'
 description:      '.....'
 url:              http://aukjan.github.io
-paginate:         5
+paginate:         15
 
 author:
   name:           'Aukjan van Belkum'
   url:            http://aukjan.github.io
 
 # Custom vars
-version:          1.0.0
+version:          0.0.1
 
 github:
   repo:           https://github.com/aukjan/

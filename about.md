@@ -4,7 +4,6 @@ title: About
 ---
 
 <p class="message">
-	Nothing to see .. move along .. 
+So, to keep track of what I am doing, some random notes will appear here .. 
 </p>
 
-Thanks for stopping by!
