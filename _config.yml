@@ -10,6 +10,7 @@ tagline:          'What am i doing wrong?'
 description:      '.....'
 url:              http://aukjan.github.io
 paginate:         15
+baseurl:          '/'
 
 author:
   name:           'Aukjan van Belkum'
@@ -20,3 +21,5 @@ version:          0.0.1
 
 github:
   repo:           https://github.com/aukjan/
+
+gems:             [ jekyll-paginate ]
