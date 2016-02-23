@@ -5,8 +5,8 @@ highlighter:      rouge
 permalink:        pretty
 
 # Setup
-title:            'Aukjan on Github'
-tagline:          'What am i doing wrong?'
+title:            'Aukjan'
+tagline:          'Tell me, what am i doing wrong?'
 description:      '.....'
 url:              http://aukjan.github.io
 paginate:         15
@@ -17,7 +17,7 @@ author:
   url:            http://aukjan.github.io
 
 # Custom vars
-version:          0.0.1
+version:          0.0.2
 
 github:
   repo:           https://github.com/aukjan/
