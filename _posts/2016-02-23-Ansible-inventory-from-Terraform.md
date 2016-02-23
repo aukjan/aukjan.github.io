@@ -4,7 +4,7 @@ title: Ansible inventory generated from Terraform.
 excerpt_separator: <!--more-->
 ---
 
-When creating an infrastructure with [Terraform](http://terraform.io), it is nice to have Terraform create the [Ansible](https://www.ansible.com) inventory file for us. To achive this it is possible to utilize the Terraform templates for generation of hostnames and the actual inventory file. 
+When creating an infrastructure with [Terraform](http://terraform.io), it is nice to have Terraform create the [Ansible](https://www.ansible.com) inventory file for us. To achive this it is possible to utilize the Terraform templates for generation of hostnames and the actual inventory file. All code can be found [here](https://github.com/aukjan/terraform-playground/tree/master/ansible/hosts)
 
 
 <!--more-->
