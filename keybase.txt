@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/aukjan
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://aukjan.vanbelkum.nl
+  * I am aukjan (https://keybase.io/aukjan) on keybase.
+  * I have a public key ASA92iaFHgLMqVajYHS3d4tnQZMvW6UTQlLI8fd9cc2elwo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01203dda26851e02cca956a36074b7778b6741932f5ba5134252c8f1f77d71cd9e970a",
+            "host": "keybase.io",
+            "kid": "01203dda26851e02cca956a36074b7778b6741932f5ba5134252c8f1f77d71cd9e970a",
+            "uid": "d457a904df0a8767e2082adb763d3419",
+            "username": "aukjan"
+        },
+        "service": {
+            "hostname": "aukjan.vanbelkum.nl",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.14"
+    },
+    "ctime": 1460037964,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1460037909,
+        "hash": "77c2df506f2ae745588d4c536168bfcb11ec6d2a095cc86aec7670268fea20a928e60d249453a9be29e3cc8a858051201df948dc252e956fd2b29cf3caa4fdf8",
+        "seqno": 434171
+    },
+    "prev": "97311eacc9e8b001eca3f316b51c8be5b59afb7a35994c0f0b7c762d5d1d2c87",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+g6Rib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgPdomhR4CzKlWo2B0t3eLZ0GTL1ulE0JSyPH3fXHNnpcKp3BheWxvYWTFAvh7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwM2RkYTI2ODUxZTAyY2NhOTU2YTM2MDc0Yjc3NzhiNjc0MTkzMmY1YmE1MTM0MjUyYzhmMWY3N2Q3MWNkOWU5NzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwM2RkYTI2ODUxZTAyY2NhOTU2YTM2MDc0Yjc3NzhiNjc0MTkzMmY1YmE1MTM0MjUyYzhmMWY3N2Q3MWNkOWU5NzBhIiwidWlkIjoiZDQ1N2E5MDRkZjBhODc2N2UyMDgyYWRiNzYzZDM0MTkiLCJ1c2VybmFtZSI6ImF1a2phbiJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiYXVramFuLnZhbmJlbGt1bS5ubCIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMTQifSwiY3RpbWUiOjE0NjAwMzc5NjQsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ2MDAzNzkwOSwiaGFzaCI6Ijc3YzJkZjUwNmYyYWU3NDU1ODhkNGM1MzYxNjhiZmNiMTFlYzZkMmEwOTVjYzg2YWVjNzY3MDI2OGZlYTIwYTkyOGU2MGQyNDk0NTNhOWJlMjllM2NjOGE4NTgwNTEyMDFkZjk0OGRjMjUyZTk1NmZkMmIyOWNmM2NhYTRmZGY4Iiwic2Vxbm8iOjQzNDE3MX0sInByZXYiOiI5NzMxMWVhY2M5ZThiMDAxZWNhM2YzMTZiNTFjOGJlNWI1OWFmYjdhMzU5OTRjMGYwYjdjNzYyZDVkMWQyYzg3Iiwic2Vxbm8iOjksInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RA+ItNGd7tajgLh2d+/5BAJNuLHO+V1yid08RWWwkg9GiyJUlEUW0jXSWWIhMQCtOi7aFYQrZelyML7zEahcDRCKhzaWdfdHlwZSCjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/aukjan
+
+==================================================================
