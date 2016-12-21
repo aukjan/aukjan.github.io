@@ -50,6 +50,8 @@ do
 done 
 ```
 
+{% gist 14aa3ebf8bb6824d6515f0e67c71b2ee %}
+
 Now choose your favorite means of running (simple shell script, or wrappes in Automator Application) and voila, no more manual reset of the WiFi connection! 
 
 Oh, and it creates a nice log...
