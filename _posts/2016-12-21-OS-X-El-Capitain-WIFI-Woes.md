@@ -34,22 +34,6 @@ So now there are two options... Dig into the MacOS strangeness of the WiFi conne
 
 The follwing little shell script gem will keep an eye out for flaky connection and fixes it for you:
 
-```
-#!/bin/bash
-[[ -d ${HOME}/log ]] || mkdir -p ${HOME}/log
-echo "$(date) [START] Starting WIFI Watch" >> ${HOME}/log/wifi_reset.log
-while [ 1 ]
-do 
-  ping -c 5 -t 10 8.8.8.8 ||  ( 
-    echo "$(date) [RESET] Resetting WIFI connection " >> ${HOME}/log/wifi_reset.log 
-    networksetup -setairportpower en0 off
-    sleep 5
-    networksetup -setairportpower en0 on
-    sleep 30
-  ); 
-done 
-```
-
 {% gist 14aa3ebf8bb6824d6515f0e67c71b2ee %}
 
 Now choose your favorite means of running (simple shell script, or wrappes in Automator Application) and voila, no more manual reset of the WiFi connection! 
