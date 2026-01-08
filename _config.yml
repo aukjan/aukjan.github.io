@@ -5,16 +5,18 @@ highlighter:      rouge
 permalink:        pretty
 
 # Setup
-title:            'Aukjan'
-tagline:          'Tell me, what am i doing wrong?'
-description:      '.....'
-url:              http://aukjan.github.io
+title:            'Aukjan van Belkum'
+tagline:          'Global CTO | Cybersecurity Strategist | Executive Leader'
+description:      'Chief Technology Officer and strategic advisor with 22+ years leading global cybersecurity transformation, digital innovation, and international market expansion for enterprise organizations.'
+url:              https://aukjan.github.io
 paginate:         15
 baseurl:          '/'
 
 author:
   name:           'Aukjan van Belkum'
-  url:            http://aukjan.github.io
+  url:            https://aukjan.github.io
+  location:       'Zaltbommel, Netherlands'
+  linkedin:       'https://www.linkedin.com/in/aukjan/'
 
 # Custom vars
 version:          0.0.2
