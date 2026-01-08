@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aukjan van Belkum - Global CTO | Cybersecurity Strategist | Executive Leader</title>
+    <meta name="description" content="Chief Technology Officer and strategic advisor with 22+ years leading global cybersecurity transformation, digital innovation, and international market expansion for enterprise organizations.">
+    <meta name="keywords" content="CTO, Chief Technology Officer, cybersecurity strategy, global technology leader, digital transformation, executive advisory, board positions, international markets, enterprise security">
+    <meta name="author" content="Aukjan van Belkum">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <h1 class="hero-title">Aukjan van Belkum</h1>
+            <p class="hero-subtitle">Chief Technology Officer | Strategic Leader | Cybersecurity Visionary</p>
+            <p class="hero-description">Transforming global cybersecurity landscapes through strategic innovation and product excellence</p>
+            <div class="hero-metrics">
+                <span class="metric">22+ Years Leadership</span>
+                <span class="metric">Global Markets</span>
+                <span class="metric">Enterprise Solutions</span>
+            </div>
+        </header>
+        <main>
+            <section id="strategic-vision" class="section">
+                <h2 class="section-title">Strategic Vision</h2>
+                <p class="section-content">As a seasoned technology executive, I drive digital transformation and cybersecurity innovation across global markets. My strategic approach combines deep technical expertise with business acumen to deliver solutions that protect enterprises while enabling growth and competitive advantage.</p>
+
+                <div class="vision-pillars">
+                    <div class="pillar">
+                        <h4>Global Market Leadership</h4>
+                        <p>Spearheading cybersecurity strategies that scale across international markets, adapting to diverse regulatory environments and business cultures.</p>
+                    </div>
+                    <div class="pillar">
+                        <h4>Strategic Innovation</h4>
+                        <p>Bridging the gap between emerging technologies and business value, turning cybersecurity from cost center to competitive differentiator.</p>
+                    </div>
+                    <div class="pillar">
+                        <h4>Enterprise Transformation</h4>
+                        <p>Leading digital transformation initiatives that enhance security posture while accelerating business objectives and operational efficiency.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="business-impact" class="section">
+                <h2 class="section-title">Business Impact & Results</h2>
+
+                <div class="impact-grid">
+                    <div class="impact-item">
+                        <div class="impact-number">Global</div>
+                        <div class="impact-label">Market Reach</div>
+                        <p>Expanded cybersecurity solutions across international markets, adapting strategies for diverse regulatory and business environments.</p>
+                    </div>
+
+                    <div class="impact-item">
+                        <div class="impact-number">Enterprise</div>
+                        <div class="impact-label">Scale Solutions</div>
+                        <p>Architected and delivered cybersecurity platforms serving enterprise clients with complex, multi-jurisdictional requirements.</p>
+                    </div>
+
+                    <div class="impact-item">
+                        <div class="impact-number">Strategic</div>
+                        <div class="impact-label">Innovation</div>
+                        <p>Transformed cybersecurity from reactive defense to proactive business enabler, driving measurable ROI and competitive advantage.</p>
+                    </div>
+                </div>
+
+                <div class="leadership-approach">
+                    <h3>Executive Leadership Approach</h3>
+                    <div class="approach-grid">
+                        <div class="approach-item">
+                            <strong>Strategic Alignment:</strong> Ensuring technology initiatives directly support business objectives and market expansion goals.
+                        </div>
+                        <div class="approach-item">
+                            <strong>Global Perspective:</strong> Leading cross-functional teams across time zones and cultures to deliver cohesive solutions.
+                        </div>
+                        <div class="approach-item">
+                            <strong>Innovation Culture:</strong> Fostering environments where technical excellence meets business innovation and customer value.
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="thought-leadership" class="section">
+                <h2 class="section-title">Thought Leadership & Expertise</h2>
+
+                <div class="expertise-areas">
+                    <div class="expertise-item">
+                        <h4>C-Suite Advisory</h4>
+                        <p>Advising executive teams on cybersecurity strategy, digital transformation, and technology investment decisions that drive business growth while managing risk.</p>
+                    </div>
+
+                    <div class="expertise-item">
+                        <h4>Global Market Strategy</h4>
+                        <p>Developing cybersecurity go-to-market strategies for international expansion, navigating complex regulatory environments across multiple jurisdictions.</p>
+                    </div>
+
+                    <div class="expertise-item">
+                        <h4>Product Innovation</h4>
+                        <p>Leading product strategy from conception to market leadership, building solutions that scale globally while maintaining security excellence.</p>
+                    </div>
+                </div>
+
+                <div class="credentials">
+                    <h3>Executive Credentials</h3>
+                    <div class="credential-grid">
+                        <div class="credential">
+                            <strong>Strategic Leadership:</strong> Product Focus Certified Product Manager, Path to Product Strategy
+                        </div>
+                        <div class="credential">
+                            <strong>Agile Excellence:</strong> Certified Scrum Product Owner, Enterprise Agile Transformation
+                        </div>
+                        <div class="credential">
+                            <strong>Technical Foundation:</strong> Eindhoven University of Technology, Engineering Excellence
+                        </div>
+                        <div class="credential">
+                            <strong>Professional Recognition:</strong> KIVI Member, Industry Thought Leader
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="collaboration" class="section">
+                <h2 class="section-title">Strategic Collaboration</h2>
+                <p class="section-content">Available for C-suite advisory roles, board positions, and strategic consulting engagements focused on cybersecurity transformation and global market expansion.</p>
+
+                <div class="collaboration-areas">
+                    <div class="collab-item">
+                        <h4>Executive Advisory</h4>
+                        <p>Strategic guidance for technology transformation, cybersecurity roadmaps, and international market entry strategies.</p>
+                    </div>
+
+                    <div class="collab-item">
+                        <h4>Speaking & Thought Leadership</h4>
+                        <p>Keynote presentations on cybersecurity strategy, digital transformation, and global technology leadership at industry conferences.</p>
+                    </div>
+
+                    <div class="collab-item">
+                        <h4>Board & Investment Advisory</h4>
+                        <p>Strategic oversight for technology companies, cybersecurity startups, and investment decisions in the global security market.</p>
+                    </div>
+                </div>
+
+                <div class="connect-section">
+                    <h3>Connect Globally</h3>
+                    <div class="global-contact">
+                        <a href="https://www.linkedin.com/in/aukjan/" target="_blank" rel="noopener noreferrer" class="primary-contact">
+                            <strong>LinkedIn Profile</strong>
+                            <span>Strategic Networking & Professional Dialogue</span>
+                        </a>
+                        <div class="contact-details">
+                            <p><strong>Base:</strong> Netherlands • <strong>Reach:</strong> Global Markets</p>
+                            <p><strong>Languages:</strong> Dutch, English • <strong>Availability:</strong> International Travel</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2025 Aukjan van Belkum. All rights reserved.</p>
+            <p>Professional portfolio showcasing expertise in technology leadership and cybersecurity</p>
+        </footer>
+    </div>
+</body>
+</html>
+
