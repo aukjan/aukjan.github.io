@@ -2,30 +2,19 @@
 layout: default
 ---
 
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
-  
-  If you liked this post, you can
-<a href="https://twitter.com/intent/tweet?url={{ site.url }}/{{ page.url }}&via=aukjan&text={{ page.title }}" target="_blank" rel="noopener noreferrer"> share it with your followers</a> 
-or 
-<a href="https://twitter.com/aukjan" target="_blank" rel="noopener noreferrer">follow me on Twitter</a>!
-</div>
+<article class="post">
+  <div class="container container-md">
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+      <div class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}">
+          {{ page.date | date: "%B %d, %Y" }}
+        </time>
+      </div>
+    </header>
 
-<div class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-  
-</div>
+    <div class="post-content">
+      {{ content }}
+    </div>
+  </div>
+</article>
