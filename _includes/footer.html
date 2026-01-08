@@ -1,0 +1,21 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-info">
+        <p class="footer-text">
+          &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. All rights reserved.
+        </p>
+        <p class="footer-text">
+          Built with <a href="https://jekyllrb.com">Jekyll</a> and hosted on <a href="https://pages.github.com">GitHub Pages</a>.
+        </p>
+      </div>
+      <div class="footer-links">
+        {% if site.author.linkedin %}
+        <a href="{{ site.author.linkedin }}" class="footer-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        {% endif %}
+        <a href="/archive" class="footer-link">Articles</a>
+        <a href="/about" class="footer-link">About</a>
+      </div>
+    </div>
+  </div>
+</footer>
