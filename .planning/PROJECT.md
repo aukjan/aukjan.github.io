@@ -77,12 +77,14 @@ Complete site transformation maintaining GitHub Pages infrastructure but reimagi
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Keep Jekyll + GitHub Pages | Existing infrastructure works, free hosting, automatic builds, no migration complexity | — Pending |
+| Keep Jekyll + GitHub Pages | Existing infrastructure works, free hosting, automatic builds, no migration complexity | ✅ Confirmed |
+| Jekyll as single architecture | Removed standalone index.html/styles.css; maintains consistency, leverages existing infrastructure, enables template reuse | ✅ Complete (2026-01-08) |
 | Written content only (no video) | Focus effort on core written thought leadership, video can be added later | — Pending |
-| Static site, no CMS | Simplicity, security, performance; content updates via git/markdown sufficient for personal site | — Pending |
+| Static site, no CMS | Simplicity, security, performance; content updates via git/markdown sufficient for personal site | ✅ Confirmed |
 | Modern design overhaul | Current Lanyon theme too dated for C-level branding, need contemporary professional look | — Pending |
-| Remove all 2016 blog content | Old content damages credibility, start fresh with current positioning | — Pending |
+| Remove all 2016 blog content | Old content damages credibility, start fresh with current positioning | ✅ Complete (2026-01-08) |
 | GitHub Actions for CI | Stay within GitHub ecosystem constraint, modern approach vs legacy GitHub Pages auto-build | — Pending |
+| Use Gemfile for dependencies | Reproducible builds, version pinning, better local development experience | ✅ Complete (2026-01-08) |
 
 ## Constraints
 
