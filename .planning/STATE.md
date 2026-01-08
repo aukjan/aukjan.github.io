@@ -17,7 +17,7 @@ Transform existing Jekyll blog into modern personal branding site.
 | Phase | Status | Progress | Plans |
 |-------|--------|----------|-------|
 | 1. Foundation & Cleanup | ✅ Complete | 100% | 3/3 |
-| 2. Design System & Architecture | 🔜 Pending | 0% | 0/0 |
+| 2. Design System & Architecture | 📋 Planned | 0% | 0/3 |
 | 3. Core Pages & Content Structure | 🔜 Pending | 0% | 0/0 |
 | 4. Portfolio & Case Studies | 🔜 Pending | 0% | 0/0 |
 | 5. Thought Leadership Platform | 🔜 Pending | 0% | 0/0 |
@@ -98,7 +98,8 @@ All Phase 1 deliverables achieved:
 3. Monitor first workflow run in Actions tab
 
 **Next Phase:**
-- `/gsd:plan-phase 2` - Design System & Architecture
+Phase 2 planning complete! Ready to execute:
+- `/gsd:execute-plan .planning/phases/02-design-system-architecture/phase2-foundation-PLAN.md`
 - Or use `/gsd:progress` to review and auto-route
 
 ---
