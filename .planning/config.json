@@ -1,0 +1,10 @@
+{
+  "workflow": {
+    "mode": "yolo",
+    "depth": "standard"
+  },
+  "project": {
+    "name": "Personal Branding Site: CPO/CTO/CPTO Portfolio",
+    "initialized": "2026-01-08"
+  }
+}
