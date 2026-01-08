@@ -1,1 +1,97 @@
-// Typography system placeholder - to be populated in Task 3
+/**
+ * Typography System
+ *
+ * Montserrat (sans-serif) for headings - confident, clear hierarchy
+ * Merriweather (serif) for body text - readable, approachable
+ */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* Body text - readable, approachable */
+body {
+  font-family: var(--font-serif);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text);
+  font-weight: var(--font-normal);
+}
+
+/* Headings - confident, clear hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  font-weight: var(--font-bold);
+  line-height: var(--leading-tight);
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+}
+
+h1 {
+  font-size: var(--text-5xl);
+  letter-spacing: -0.025em;
+}
+
+h2 {
+  font-size: var(--text-4xl);
+  letter-spacing: -0.025em;
+}
+
+h3 {
+  font-size: var(--text-3xl);
+}
+
+h4 {
+  font-size: var(--text-2xl);
+}
+
+h5 {
+  font-size: var(--text-xl);
+}
+
+h6 {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+}
+
+/* Paragraphs - generous spacing */
+p {
+  margin-bottom: var(--space-md);
+}
+
+/* Links - clear affordance */
+a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transition: color var(--transition-fast);
+
+  &:hover {
+    color: var(--color-primary-dark);
+  }
+}
+
+/* Lead text - introductions */
+.lead {
+  font-size: var(--text-xl);
+  font-family: var(--font-sans);
+  font-weight: var(--font-normal);
+  line-height: var(--leading-normal);
+  color: var(--color-text-light);
+}
+
+/* Small text */
+small {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+/* Strong emphasis */
+strong {
+  font-weight: var(--font-bold);
+}
+
+/* Typography utility classes */
+.text-sans { font-family: var(--font-sans); }
+.text-serif { font-family: var(--font-serif); }
+.text-muted { color: var(--color-text-muted); }
