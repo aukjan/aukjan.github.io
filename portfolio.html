@@ -1,0 +1,57 @@
+---
+layout: page
+title: Portfolio
+description: Career timeline showcasing product and technical leadership across diverse contexts
+permalink: /portfolio/
+---
+
+<div class="container">
+  <header class="page-header">
+    <h1>{{ page.title }}</h1>
+    <p class="lead">A timeline demonstrating versatility across product and technical challenges—from startups to scale-ups, greenfield to turnaround, strategy to execution.</p>
+  </header>
+
+  {% assign sorted_projects = site.portfolio | sort: 'date' | reverse %}
+  {% assign projects_by_year = sorted_projects | group_by_exp: "item", "item.date | date: '%Y'" %}
+
+  {% if sorted_projects.size > 0 %}
+    <section class="timeline" aria-label="Career timeline">
+      {% for year_group in projects_by_year %}
+        <div class="timeline-year">
+          <h2>{{ year_group.name }}</h2>
+        </div>
+
+        <ol class="timeline-list">
+          {% for project in year_group.items %}
+            <li class="timeline-item">
+              <article class="timeline-card">
+                <time datetime="{{ project.date | date: '%Y-%m' }}">
+                  {{ project.date | date: '%B %Y' }}
+                </time>
+                <h3>{{ project.title }}</h3>
+                <p class="company-context">{{ project.company_context }}</p>
+                <p class="role">{{ project.role }}</p>
+                <div class="card-meta">
+                  {% if project.category == 'product' %}
+                    <span class="badge badge-accent">Product</span>
+                  {% elsif project.category == 'technical' %}
+                    <span class="badge badge-primary">Technical</span>
+                  {% endif %}
+                </div>
+                <p class="summary">{{ project.summary }}</p>
+                <a href="{{ project.url }}" class="card-link">
+                  Read the full story
+                  <span class="visually-hidden">about {{ project.title }}</span>
+                </a>
+              </article>
+            </li>
+          {% endfor %}
+        </ol>
+      {% endfor %}
+    </section>
+  {% else %}
+    <div class="empty-state">
+      <p>Portfolio projects coming soon.</p>
+    </div>
+  {% endif %}
+</div>
