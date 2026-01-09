@@ -13,6 +13,51 @@
     {% endif %}
   </title>
 
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="keywords" content="CTO startup growth, CPO scaleup, product engineering leadership, startup structure, scaleup leadership, technical product leadership, engineering strategy, growth stage CTO">
+  <meta name="author" content="{{ site.author.name }}">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} &middot; {{ site.title }}{% else %}{{ site.title }} &middot; {{ site.tagline }}{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:type" content="{% if page.title == 'About' %}profile{% elsif page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  {% if page.layout == 'post' %}
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  <meta property="article:author" content="{{ site.author.name }}">
+  {% endif %}
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} &middot; {{ site.title }}{% else %}{{ site.title }} &middot; {{ site.tagline }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ site.author.name }}",
+    "jobTitle": "CTO | CPO | CPTO for Startups & Scaleups",
+    "description": "Technology leader specializing in scaling startups and scaleups through product and engineering leadership, bringing structure to growing organizations without over-engineering.",
+    "url": "{{ site.url }}",
+    "sameAs": [
+      "{{ site.author.linkedin }}",
+      "{{ site.github.repo }}"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "{{ site.author.location }}"
+    }
+  }
+  </script>
+
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}assets/css/main.css">
   <link rel="stylesheet" href="{{ site.baseurl }}public/css/syntax.css">
