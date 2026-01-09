@@ -69,10 +69,46 @@ Docker provides the exact Ruby 3.1 environment used by GitHub Actions, ensuring 
 ├── _layouts/             # Page templates
 ├── _includes/            # Reusable components
 ├── _posts/               # Blog posts (Markdown)
+├── _portfolio/           # Portfolio case studies collection
 ├── public/               # Static assets (CSS, images)
 ├── .planning/            # Project planning docs (GSD workflow)
 └── Gemfile               # Ruby dependencies
 ```
+
+## Content Structure
+
+### Portfolio
+
+Portfolio case studies are managed as a Jekyll collection in `_portfolio/`.
+
+**Adding a new case study:**
+
+1. Create a markdown file in `_portfolio/`: `YYYY-project-slug.md`
+2. Add front matter:
+   ```yaml
+   ---
+   layout: portfolio
+   title: "Project Title"
+   description: "SEO description (under 160 chars)"
+   date: YYYY-MM-DD
+   role: "Your Role"
+   company_context: "Generic company description"
+   category: technical # or 'product'
+   summary: "1-2 sentence summary with measurable outcome"
+   ---
+   ```
+3. Follow 6-part case study structure:
+   - The Context (1-2 paragraphs)
+   - The Challenge (2-3 paragraphs)
+   - Your Approach (3-4 paragraphs)
+   - Key Decisions (2-3 paragraphs)
+   - The Outcome (2-3 paragraphs)
+   - What You Learned (1-2 paragraphs)
+4. Target 1200-1800 words per case study
+5. Build and test locally before committing
+
+**Portfolio displays at:** `/portfolio/`
+**Individual case studies at:** `/portfolio/project-slug/`
 
 ## Deployment
 

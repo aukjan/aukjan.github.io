@@ -287,12 +287,80 @@ Small labels for categories or status indicators.
 
 ```html
 <span class="badge">New</span>
+<span class="badge badge-primary">Technical</span>
+<span class="badge badge-accent">Product</span>
 ```
 
 **When to use:**
 - Post categories or tags
 - Status indicators
 - Small labels
+- Portfolio project categories
+
+**Variants:**
+- Default: Neutral styling
+- `badge-primary`: Blue for technical projects
+- `badge-accent`: Amber for product projects
+
+### Timeline Component
+
+**File:** `_sass/_timeline.scss`
+
+Vertical timeline for portfolio with alternating left/right cards (desktop) and stacked layout (mobile).
+
+```html
+<section class="timeline" aria-label="Career timeline">
+  <div class="timeline-year"><h2>2024</h2></div>
+  <ol class="timeline-list">
+    <li class="timeline-item">
+      <article class="timeline-card">
+        <time datetime="2024-03">March 2024</time>
+        <h3>Project Title</h3>
+        <p class="company-context">Company Context</p>
+        <p class="role">Your Role</p>
+        <div class="card-meta">
+          <span class="badge badge-primary">Technical</span>
+        </div>
+        <p class="summary">Project summary with measurable outcomes.</p>
+        <a href="/portfolio/project-slug" class="card-link">
+          Read the full story
+          <span class="visually-hidden">about Project Title</span>
+        </a>
+      </article>
+    </li>
+  </ol>
+</section>
+```
+
+**When to use:**
+- Portfolio career timeline
+- Chronological project showcase
+- Any time-based content sequence
+
+**Key Classes:**
+- `.timeline` - Container with center line (desktop) or left line (mobile)
+- `.timeline-year` - Year marker with dot on timeline
+- `.timeline-list` - Ordered list (`<ol>`) containing projects
+- `.timeline-item` - List item with flexbox positioning
+- `.timeline-card` - Project card extending base card component
+
+**Responsive Behavior:**
+- **Desktop (≥768px):** Alternating left/right, center line at 50%
+- **Mobile (<768px):** Stacked right of line, left line at 20px
+
+**Accessibility:**
+- Semantic HTML: `<section>`, `<ol>`, `<article>`
+- Proper heading hierarchy (year = h2, project = h3)
+- ARIA label on timeline section
+- Timeline line decorative (CSS only, ::before)
+- Visually hidden context for screen readers
+
+**Implementation Details:**
+- Uses `::before` pseudo-element for vertical line
+- Alternating items via `nth-child(odd)` and `nth-child(even)`
+- Year markers positioned absolutely with dot decoration
+- Cards extend base `.card` component with timeline-specific spacing
+- Responsive breakpoint at 768px switches layout modes
 
 ## Layout System
 
