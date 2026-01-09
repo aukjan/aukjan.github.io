@@ -10,12 +10,45 @@ This site showcases executive leadership experience, thought leadership, and str
 
 ## Development
 
-### Prerequisites
+### Option 1: Docker (Recommended)
 
-- Ruby 3.0+ (for local development)
-- Bundler gem
+**Prerequisites:** Docker and Docker Compose
 
-### Local Setup
+Docker provides the exact Ruby 3.1 environment used by GitHub Actions, ensuring consistency.
+
+1. **Build and start the container:**
+   ```bash
+   docker-compose up
+   ```
+
+2. **Site will be available at:**
+   - Main site: `http://localhost:4000`
+   - LiveReload: Automatic browser refresh on file changes
+
+3. **Rebuild after Gemfile changes:**
+   ```bash
+   docker-compose up --build
+   ```
+
+4. **Stop the container:**
+   ```bash
+   docker-compose down
+   ```
+
+5. **One-off commands:**
+   ```bash
+   # Build site only (no server)
+   docker-compose run --rm jekyll bundle exec jekyll build
+
+   # Run without LiveReload
+   docker-compose run --rm -p 4000:4000 jekyll bundle exec jekyll serve --host 0.0.0.0
+   ```
+
+### Option 2: Native Ruby
+
+**Prerequisites:** Ruby 3.0+ and Bundler
+
+⚠️ **Note:** Local Ruby 2.6 cannot install required gems. Use Docker or upgrade to Ruby 3.1+.
 
 1. Install dependencies:
    ```bash
@@ -24,17 +57,10 @@ This site showcases executive leadership experience, thought leadership, and str
 
 2. Run Jekyll locally:
    ```bash
-   bundle exec jekyll serve
+   bundle exec jekyll serve --livereload
    ```
 
    Site will be available at `http://localhost:4000`
-
-3. Alternative: Simple preview server (no Jekyll processing):
-   ```bash
-   python3 preview.py
-   ```
-
-   Site will be available at `http://localhost:8000`
 
 ### Project Structure
 
