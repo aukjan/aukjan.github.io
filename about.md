@@ -1,14 +1,14 @@
 ---
 layout: page
 title: About
-subtitle: Blending Technical Depth with Customer Empathy
+subtitle: Bringing Structure to Growing Organizations
 ---
 
 ## Who I Am
 
-I'm a technology leader with a unique perspective shaped by dual roles as both CTO (Chief Technology Officer) and CPO (Chief Product Officer). This combination gives me the rare ability to bridge technical excellence with deep customer understanding.
+I'm a technology leader who helps startups and scaleups navigate the critical transition from scrappy early-stage execution to structured, scalable operations. My unique perspective comes from dual experience as both CTO (Chief Technology Officer) and CPO (Chief Product Officer)—giving me the rare ability to bring the right amount of structure to both product and engineering organizations.
 
-With 22+ years of executive experience, I specialize in transforming cybersecurity challenges into competitive advantages for international enterprises. My work spans global market expansion, digital transformation, and strategic product innovation.
+With 22+ years of leadership experience across growing companies, I specialize in helping organizations scale without over-engineering. My work focuses on introducing product structures, building engineering teams, and establishing operational frameworks that enable growth without sacrificing agility.
 
 ### My Journey
 
