@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aukjan.github.io/sitemap.xml
