@@ -25,3 +25,15 @@ github:
   repo:           https://github.com/aukjan/
 
 plugins:          [ jekyll-paginate, jekyll-sitemap ]
+
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: "portfolio"
+    values:
+      layout: "portfolio"
