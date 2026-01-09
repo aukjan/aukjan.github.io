@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<article class="portfolio-case-study">
+  <div class="container container-narrow">
+    <header class="case-study-header">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/portfolio">← Back to Portfolio</a>
+      </nav>
+
+      <div class="case-study-meta">
+        <time datetime="{{ page.date | date: '%Y-%m' }}">{{ page.date | date: '%B %Y' }}</time>
+        {% if page.category == 'product' %}
+          <span class="badge badge-accent">Product</span>
+        {% elsif page.category == 'technical' %}
+          <span class="badge badge-primary">Technical</span>
+        {% endif %}
+      </div>
+
+      <h1>{{ page.title }}</h1>
+
+      <div class="case-study-intro">
+        <p class="role"><strong>Role:</strong> {{ page.role }}</p>
+        <p class="company-context"><strong>Context:</strong> {{ page.company_context }}</p>
+        <p class="lead">{{ page.summary }}</p>
+      </div>
+    </header>
+
+    <div class="case-study-content">
+      {{ content }}
+    </div>
+
+    <footer class="case-study-footer">
+      <a href="/portfolio" class="btn btn-primary">← Back to Portfolio</a>
+      <a href="/contact" class="btn btn-secondary">Get in Touch</a>
+    </footer>
+  </div>
+</article>
