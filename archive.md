@@ -2,6 +2,7 @@
 layout: page
 title: Thought Leadership
 subtitle: Articles on Technology, Product Strategy, and Leadership
+description: Articles on technology trends, product innovation, scaling engineering teams, and strategic leadership for startups and scaleups.
 ---
 
 <div class="post-list">

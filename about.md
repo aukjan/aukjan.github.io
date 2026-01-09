@@ -2,6 +2,7 @@
 layout: page
 title: About
 subtitle: Bringing Structure to Growing Organizations
+description: Technology leader with 22+ years scaling startups and scaleups. Dual CTO/CPO experience bringing structure to product and engineering organizations.
 ---
 
 ## Who I Am

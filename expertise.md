@@ -2,6 +2,7 @@
 layout: page
 title: Expertise
 subtitle: Operating at Strategic, Tactical, and Technical Levels
+description: Multi-level leadership for growing companies. Strategic vision, tactical execution, and technical excellence for startup and scaleup growth.
 ---
 
 ## Multi-Level Leadership for Growing Companies

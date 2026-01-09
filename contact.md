@@ -2,6 +2,7 @@
 layout: page
 title: Contact
 subtitle: Let's Connect
+description: Open and accessible. Connect about scaling startups, product and engineering leadership, speaking opportunities, or advisory collaboration.
 ---
 
 ## Always Open to Conversation
