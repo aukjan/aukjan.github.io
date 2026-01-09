@@ -215,12 +215,425 @@ This system replaces:
 Kept:
 - `public/css/syntax.css` (code highlighting)
 
-## Next Steps
+## Component Library
 
-This foundation enables:
-- Component library (buttons, cards, navigation)
-- Layout system (grid, containers)
-- Responsive utilities
-- Custom page templates
+### Hero Section
 
-See `.planning/phases/02-design-system-architecture/` for roadmap.
+Large, eye-catching hero section with gradient background for homepage prominence.
+
+```html
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="hero-title">Your Name</h1>
+      <p class="hero-subtitle">Title | Role | Expertise</p>
+      <p class="hero-description">Brief value proposition</p>
+    </div>
+  </div>
+</section>
+```
+
+**When to use:**
+- Homepage only (creates focal point)
+- Above-the-fold introduction
+- Clear value proposition display
+
+**Accessibility:**
+- White text on gradient meets WCAG AAA (8:1+ contrast)
+- Scales down on mobile (48px → 36px heading)
+
+### Card Component
+
+Primary content container with shadow, rounded corners, and hover effect.
+
+```html
+<div class="card">
+  <h3 class="card-title">Card Title</h3>
+  <p class="card-content">Card content goes here.</p>
+</div>
+```
+
+**When to use:**
+- Grouping related content
+- Article previews in grids
+- Expertise areas, features, or highlights
+
+**Behavior:**
+- Subtle lift on hover (2px translateY)
+- Shadow increases on hover for depth
+- Fully responsive (stacks on mobile)
+
+### Button Component
+
+Call-to-action buttons in primary and secondary styles.
+
+```html
+<a href="/page" class="btn btn-primary">Primary Action</a>
+<a href="/page" class="btn btn-secondary">Secondary Action</a>
+```
+
+**When to use:**
+- Primary: Main call-to-action (one per section)
+- Secondary: Alternative actions, less emphasis
+
+**Accessibility:**
+- Minimum 44px touch target
+- Clear focus-visible outline (3px)
+- Adequate padding and contrast
+
+### Badge/Tag
+
+Small labels for categories or status indicators.
+
+```html
+<span class="badge">New</span>
+```
+
+**When to use:**
+- Post categories or tags
+- Status indicators
+- Small labels
+
+## Layout System
+
+### Containers
+
+Constrained-width containers for content.
+
+```html
+<div class="container">Full width (1024px max)</div>
+<div class="container container-md">Medium (768px max)</div>
+<div class="container container-sm">Small (640px max)</div>
+```
+
+**Responsive behavior:**
+- Mobile: 24px horizontal padding
+- Desktop (768px+): 32px horizontal padding
+- Auto-centered with max-width constraints
+
+### Sections
+
+Consistent vertical spacing for page sections.
+
+```html
+<section class="section">
+  <div class="container">
+    <!-- Section content -->
+  </div>
+</section>
+```
+
+**Spacing:**
+- Mobile: 64px top/bottom padding
+- Desktop: 96px top/bottom padding
+
+### Grid System
+
+Responsive grid layout (mobile-first).
+
+```html
+<div class="grid grid-cols-2">
+  <div>Column 1</div>
+  <div>Column 2</div>
+</div>
+
+<div class="grid grid-cols-3">
+  <div>Column 1</div>
+  <div>Column 2</div>
+  <div>Column 3</div>
+</div>
+```
+
+**Responsive behavior:**
+- Mobile: 1 column (automatic)
+- Tablet+ (768px): 2 or 3 columns as specified
+- 24px gap between items
+
+## Page Layouts
+
+### Default Layout
+
+Base layout with header, main, footer landmarks.
+
+```yaml
+---
+layout: default
+title: Page Title
+---
+
+<!-- Your content here -->
+```
+
+**Includes:**
+- Semantic HTML structure
+- Site header with navigation
+- Main content area
+- Site footer
+
+### Page Layout
+
+Content page with centered article wrapper.
+
+```yaml
+---
+layout: page
+title: Page Title
+subtitle: Optional Subtitle
+---
+
+## Your Content
+
+Regular markdown content here.
+```
+
+**Features:**
+- Centered content (768px max-width)
+- Page header with title and optional subtitle
+- Optimal reading width (70ch for text)
+- Proper article semantics
+
+### Post Layout
+
+Blog post layout with metadata.
+
+```yaml
+---
+layout: post
+title: Post Title
+date: 2024-01-08
+---
+
+Your post content here.
+```
+
+**Features:**
+- Post header with title and date
+- Reading-optimized content width
+- Post metadata styling
+- Image support with rounded corners
+
+## Design Patterns
+
+### Homepage Pattern
+
+```html
+<!-- Hero -->
+<section class="hero">...</section>
+
+<!-- Introduction -->
+<section class="section">
+  <div class="container container-md">
+    <div class="intro-content">
+      <h2>Section Title</h2>
+      <p class="lead">Lead paragraph</p>
+      <p>Regular content</p>
+    </div>
+  </div>
+</section>
+
+<!-- Card Grid -->
+<section class="section" style="background-color: var(--color-background);">
+  <div class="container">
+    <h2 style="text-align: center; margin-bottom: var(--space-2xl);">
+      Section Title
+    </h2>
+    <div class="grid grid-cols-3">
+      <div class="card">...</div>
+      <div class="card">...</div>
+      <div class="card">...</div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="section">
+  <div class="container container-sm" style="text-align: center;">
+    <h2>Call to Action</h2>
+    <p class="lead">Description</p>
+    <div style="margin-top: var(--space-lg);">
+      <a href="#" class="btn btn-primary">Primary Action</a>
+      <a href="#" class="btn btn-secondary">Secondary Action</a>
+    </div>
+  </div>
+</section>
+```
+
+### Article Archive Pattern
+
+```html
+{% if site.posts.size == 0 %}
+  <div style="text-align: center; padding: var(--space-3xl) 0;">
+    <p class="lead">Empty state message</p>
+    <p>Additional context</p>
+  </div>
+{% else %}
+  <div class="grid grid-cols-2">
+    {% for post in site.posts %}
+      <article class="card">
+        <h3 class="card-title">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </h3>
+        <div class="post-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date: "%B %d, %Y" }}
+          </time>
+        </div>
+        <p class="card-content">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        <a href="{{ post.url }}" class="btn btn-secondary">Read More →</a>
+      </article>
+    {% endfor %}
+  </div>
+{% endif %}
+```
+
+## Responsive Behavior
+
+### Mobile-First Strategy
+
+All components default to mobile layout and enhance for larger screens.
+
+**Breakpoints:**
+- Mobile: < 768px (default styles)
+- Tablet+: >= 768px (enhanced layouts)
+
+**Key Responsive Changes at 768px:**
+- Grid: 1 column → 2-3 columns
+- Container padding: 24px → 32px
+- Section spacing: 64px → 96px
+- Header: Column → Row layout
+
+### Typography Scaling
+
+Headings scale down on mobile for better fit:
+
+```scss
+.hero-title {
+  font-size: var(--text-5xl); // 48px
+
+  @media (max-width: 767px) {
+    font-size: var(--text-4xl); // 36px
+  }
+}
+
+.hero-subtitle {
+  font-size: var(--text-2xl); // 24px
+
+  @media (max-width: 767px) {
+    font-size: var(--text-xl); // 20px
+  }
+}
+```
+
+## Accessibility Guidelines
+
+### Focus States
+
+All interactive elements have clear focus indicators:
+
+```scss
+.btn:focus-visible {
+  outline: 3px solid var(--color-primary-light);
+  outline-offset: 2px;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--color-primary-light);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+```
+
+### Motion Preferences
+
+Respects `prefers-reduced-motion` user preference:
+
+```scss
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+```
+
+### WCAG 2.1 AA Compliance
+
+✓ Color contrast: All combinations exceed 4.5:1 (most exceed 7:1 AAA)
+✓ Keyboard navigation: All interactive elements accessible
+✓ Focus indicators: Visible and clear (3px outline)
+✓ Semantic HTML: Proper landmarks and heading hierarchy
+✓ Touch targets: Minimum 44px for all interactive elements
+✓ Motion preferences: Respects prefers-reduced-motion
+
+## Design Decisions & Rationale
+
+### Typography Pairing
+
+**Montserrat + Merriweather**
+- Montserrat (sans): Modern, geometric, confident for headings
+- Merriweather (serif): Warm, readable, approachable for body
+- Pairing creates professional warmth without sterility
+
+### Color Palette
+
+**Warm Earth Tones (Stone Palette)**
+- Chosen over corporate grays for approachability
+- Stone-800 (#292524) provides warmth in dark text
+- Stone-50 (#fafaf9) creates soft, comfortable background
+- Confident blue (#2563eb) adds trust and credibility
+
+### Spacing System
+
+**8px Base Unit (0.5rem increments)**
+- Creates consistent vertical rhythm
+- Easy mental math for spacing decisions
+- Scales naturally with font-size changes
+- Prevents arbitrary spacing values
+
+### Component Patterns
+
+**Cards as Primary Content Container**
+- Provides clear content grouping
+- Subtle shadow for depth without excess
+- Hover effect adds interactivity
+- Flexible for various content types
+
+## Phase 2 Completion Status
+
+✅ **Foundation (phase2-foundation):**
+- Design tokens established (_tokens.scss)
+- Typography system complete (_typography.scss)
+- Base styles and reset implemented
+
+✅ **Components (phase2-components):**
+- Component library built (_components.scss)
+- Layout system created (_layout.scss)
+- All three layouts replaced (default, page, post)
+
+✅ **Prototype (phase2-prototype):**
+- Homepage redesigned with hero and cards
+- About page updated with personality
+- Archive page using card layout
+- 404 page friendly and helpful
+- Visual polish added (hover effects, smooth scroll)
+- WCAG 2.1 AA accessibility verified
+- Cross-browser compatibility confirmed
+- Responsive design tested across breakpoints
+- "Professional but approachable" aesthetic achieved
+
+## Next Steps (Phase 3)
+
+With Phase 2 complete, the design system is ready for:
+- Core content pages (case studies, portfolio items)
+- Additional content types and templates
+- Blog post creation
+- Advanced interactive components (if needed)
+- Performance optimization
+
+See `.planning/phases/03-core-pages-content/` for Phase 3 roadmap.
