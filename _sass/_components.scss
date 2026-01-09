@@ -338,3 +338,36 @@
     }
   }
 }
+
+/* Visual Polish */
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Link Hover Effects - Subtle */
+a {
+  transition: color var(--transition-fast);
+}
+
+/* Card Hover - Gentle lift */
+.card {
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+/* Focus Styles - Accessibility */
+.btn:focus-visible {
+  outline: 3px solid var(--color-primary-light);
+  outline-offset: 2px;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--color-primary-light);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
