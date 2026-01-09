@@ -19,7 +19,7 @@ Transform existing Jekyll blog into modern personal branding site.
 | 1. Foundation & Cleanup | ✅ Complete | 100% | 3/3 |
 | 2. Design System & Architecture | ✅ Complete | 100% | 3/3 |
 | 3. Core Pages & Content Structure | ✅ Complete | 100% | 3/3 |
-| 4. Portfolio & Case Studies | 🚧 In Progress | 33% | 1/3 |
+| 4. Portfolio & Case Studies | 🚧 In Progress | 67% | 2/3 |
 | 5. Thought Leadership Platform | 🔜 Pending | 0% | 0/0 |
 | 6. Polish & Launch | 🔜 Pending | 0% | 0/0 |
 
@@ -28,6 +28,20 @@ Transform existing Jekyll blog into modern personal branding site.
 ## Recent Activity
 
 **2026-01-09**
+- ✅ Completed phase4-case-studies-PLAN.md:
+  - Created portfolio layout template for case study pages
+  - Added comprehensive case study styles (130 lines)
+  - Created 4 technical project placeholders (CTO → Senior Lead)
+  - Created 3 product project placeholders (VP → Head of Product)
+  - 7 projects total spanning 2020-2023 showing career progression
+  - Product/technical split: 43%/57% (3 product, 4 technical)
+  - All projects use consistent 6-part structure
+  - Verified timeline renders all projects grouped by year
+  - 4 atomic commits, all verification checks passed
+- **Phase 4 Case Studies COMPLETE! 🎉** Second of three sub-plans:
+  - phase4-timeline: ✅ Jekyll collection, CSS timeline, portfolio page
+  - phase4-case-studies: ✅ Layout template + 7 placeholder projects
+  - Next: phase4-navigation: Nav integration, SEO, documentation
 - ✅ Completed phase4-timeline-PLAN.md:
   - Configured Jekyll `_portfolio` collection with clean URLs
   - Created timeline CSS component with vertical layout (260 lines)
@@ -37,10 +51,6 @@ Transform existing Jekyll blog into modern personal branding site.
   - Verified responsive behavior and accessibility compliance
   - Semantic HTML with ARIA labels and screen reader support
   - 5 atomic commits, all verification checks passed
-- **Phase 4 Timeline Infrastructure COMPLETE! 🎉** First of three sub-plans:
-  - phase4-timeline: Jekyll collection, CSS timeline, portfolio page
-  - Next: phase4-case-studies: Layout template + 7 placeholder projects
-  - Then: phase4-navigation: Nav integration, SEO, documentation
 - ✅ Completed phase3-seo-PLAN.md:
   - Enabled jekyll-sitemap plugin for automated sitemap.xml generation
   - Created robots.txt with sitemap reference for search engine crawling
