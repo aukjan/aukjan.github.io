@@ -2,6 +2,29 @@
 layout: default
 ---
 
+<!-- JSON-LD Structured Data for Case Study -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "{{ page.title }}",
+  "description": "{{ page.description | default: page.summary }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}",
+    "jobTitle": "{{ page.role }}",
+    "url": "{{ site.url }}"
+  },
+  "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
+  "about": {
+    "@type": "Thing",
+    "name": "{{ page.category | capitalize }} Leadership Case Study"
+  },
+  "keywords": "{{ page.category }}, leadership, {{ page.role | downcase }}, case study",
+  "url": "{{ site.url }}{{ page.url }}"
+}
+</script>
+
 <article class="portfolio-case-study">
   <div class="container container-narrow">
     <header class="case-study-header">
