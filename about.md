@@ -12,22 +12,22 @@ With 22+ years of leadership experience across growing companies, I specialize i
 
 ### My Journey
 
-My career has taken me from engineering foundations at Eindhoven University of Technology to leading global cybersecurity initiatives across multiple markets. Along the way, I've built teams, launched products, and navigated the complex intersection of technology, business, and human needs.
+My career has taken me from engineering foundations at Eindhoven University of Technology to leadership roles in fast-growing companies across multiple markets. Along the way, I've learned what it takes to scale organizations effectively—building teams, launching products, and navigating the complex intersection of technology, business, and human needs.
 
 **Current Focus:**
-- Leading global cybersecurity platform development
-- Building and scaling distributed engineering teams
-- Driving product-market fit through data-driven decisions
-- Aligning technology strategy with business objectives
+- Helping startups and scaleups introduce the right operational structures
+- Building and scaling distributed engineering teams in growth-stage companies
+- Establishing product frameworks that balance discovery with execution
+- Bringing structure to both product and engineering organizations
 
 ## What Drives Me
 
-I believe the best technology solutions come from understanding both the technical landscape AND the human needs behind them. This philosophy guides my approach to:
+I believe growing companies fail not from lack of ambition, but from introducing too much structure too early or too little structure too late. My approach focuses on finding the right balance:
 
-- **Engineering Leadership**: Building teams that deliver excellence while fostering innovation and growth
-- **Product Strategy**: Creating solutions that users actually want, balancing customer needs with technical feasibility
-- **Technical Innovation**: Architecting systems that scale and adapt to changing business requirements
-- **Strategic Thinking**: Aligning technology investments with business goals for measurable impact
+- **Engineering Leadership**: Building teams in startups/scaleups that scale effectively—introducing process that enables rather than constrains
+- **Product Strategy**: Right-sizing product operations for growth stage—balancing customer discovery, roadmap clarity, and execution velocity
+- **Organizational Design**: Bringing operational maturity without over-engineering—helping teams grow from chaos to clarity
+- **Strategic Alignment**: Connecting product and engineering structures to business objectives for measurable impact
 
 ## Professional Development
 
@@ -42,9 +42,10 @@ I believe the best technology solutions come from understanding both the technic
 ## Global Perspective
 
 **International Experience:**
-- Multi-jurisdictional cybersecurity strategy development
+- Leading distributed teams across multiple geographies and time zones
 - Cross-cultural team leadership and stakeholder management
-- Global market entry strategies and partnership development
+- Scaling organizations through international growth phases
+- Domain expertise in cybersecurity and digital transformation
 
 **Languages:**
 - **Dutch**: Native
