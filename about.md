@@ -1,77 +1,55 @@
 ---
 layout: page
-title: Executive Profile - Aukjan van Belkum
+title: About
+subtitle: Blending Technical Depth with Customer Empathy
 ---
 
-## Global Technology Leadership
+## Who I Am
 
-As a seasoned Chief Technology Officer and strategic advisor, I bring 22+ years of executive experience in cybersecurity innovation and global market expansion. My leadership philosophy centers on transforming complex technical challenges into sustainable competitive advantages for international enterprises.
+I'm a technology leader with a unique perspective shaped by dual roles as both CTO (Chief Technology Officer) and CPO (Chief Product Officer). This combination gives me the rare ability to bridge technical excellence with deep customer understanding.
 
-## Strategic Impact & Vision
+With 22+ years of executive experience, I specialize in transforming cybersecurity challenges into competitive advantages for international enterprises. My work spans global market expansion, digital transformation, and strategic product innovation.
 
-My career spans building cybersecurity solutions that scale across global markets, from startup innovation to enterprise transformation. I specialize in translating emerging security technologies into business value, leading organizations through digital transformation while maintaining operational excellence and regulatory compliance across multiple jurisdictions.
+### My Journey
 
-### Executive Achievements
+My career has taken me from engineering foundations at Eindhoven University of Technology to leading global cybersecurity initiatives across multiple markets. Along the way, I've built teams, launched products, and navigated the complex intersection of technology, business, and human needs.
 
-**Global Market Expansion**
-- Architected cybersecurity strategies for international market penetration
-- Led cross-functional teams across time zones and cultures
-- Navigated complex regulatory environments in multiple jurisdictions
+**Current Focus:**
+- Leading global cybersecurity platform development
+- Building and scaling distributed engineering teams
+- Driving product-market fit through data-driven decisions
+- Aligning technology strategy with business objectives
 
-**Business Transformation**
-- Transformed cybersecurity from cost center to revenue enabler
-- Drove digital transformation initiatives with measurable ROI
-- Built strategic partnerships with global technology leaders
+## What Drives Me
 
-**Innovation Leadership**
-- Pioneered product strategies that achieved market leadership
-- Established innovation cultures balancing technical excellence with business objectives
-- Mentored C-suite executives on technology strategy and digital transformation
+I believe the best technology solutions come from understanding both the technical landscape AND the human needs behind them. This philosophy guides my approach to:
 
-## Educational Foundation & Continuous Learning
+- **Engineering Leadership**: Building teams that deliver excellence while fostering innovation and growth
+- **Product Strategy**: Creating solutions that users actually want, balancing customer needs with technical feasibility
+- **Technical Innovation**: Architecting systems that scale and adapt to changing business requirements
+- **Strategic Thinking**: Aligning technology investments with business goals for measurable impact
 
-**Eindhoven University of Technology** (2003-2008)
-Engineering foundation providing the technical depth essential for technology leadership in complex, regulated environments.
+## Professional Development
 
-### Executive Development
-- **Strategic Product Leadership**: Product Focus Certified Product Manager, Path to Product Strategy
-- **Organizational Excellence**: Certified Scrum Product Owner, Agile at Scale methodologies
-- **Industry Leadership**: Active member of Koninklijk Instituut Van Ingenieurs (KIVI)
+**Executive Certifications:**
+- Product Focus Certified Product Manager
+- Path to Product Strategy
+- Certified Scrum Product Owner
 
-## Global Perspective & Cultural Competency
+**Professional Memberships:**
+- Koninklijk Instituut Van Ingenieurs (KIVI)
 
-**International Experience**
+## Global Perspective
+
+**International Experience:**
 - Multi-jurisdictional cybersecurity strategy development
 - Cross-cultural team leadership and stakeholder management
 - Global market entry strategies and partnership development
 
-**Languages & Cultural Fluency**
-- **Dutch**: Native - Deep understanding of European market dynamics
-- **English**: Executive proficiency - International business communication
-- **Cultural Intelligence**: Experience working across diverse business cultures
-
-## C-Suite Advisory Expertise
-
-**Strategic Domains**
-- **Cybersecurity Transformation**: From traditional IT security to business-integrated cyber resilience
-- **Global Expansion**: Technology strategies for international market entry and scaling
-- **Digital Innovation**: Emerging technology evaluation and strategic implementation
-- **Organizational Development**: Building high-performance teams in complex, regulated environments
-
-**Board & Investment Advisory**
-Available for board positions, strategic advisory roles, and investment committee participation in technology companies focused on cybersecurity, digital transformation, and global market expansion.
-
-## Industry Recognition
-
-*"A skilled leader with deep knowledge of cybersecurity, B2B markets, and product development"* - Professional colleagues consistently recognize expertise in bridging technical innovation with business strategy.
-
-Active thought leader in cybersecurity transformation, digital innovation, and global technology strategy.
+**Languages:**
+- **Dutch**: Native
+- **English**: Executive proficiency
 
 ---
 
-## Connect for Strategic Collaboration
-
-**Global Availability**: Netherlands base with international travel capability
-**Advisory Focus**: C-suite strategy, cybersecurity transformation, global market expansion
-**Professional Network**: [LinkedIn Executive Profile](https://www.linkedin.com/in/aukjan/)
-
+*Want to connect? Find me on [LinkedIn]({{ site.author.url }}) or explore my [thought leadership articles](/archive).*
