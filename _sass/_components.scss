@@ -1,5 +1,63 @@
 /* Component Library */
 
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: var(--color-surface);
+  padding: var(--space-3xl) 0;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: var(--text-5xl);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--space-md);
+  color: var(--color-surface);
+
+  @media (max-width: 767px) {
+    font-size: var(--text-4xl);
+  }
+}
+
+.hero-subtitle {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-medium);
+  font-family: var(--font-sans);
+  margin-bottom: var(--space-lg);
+  color: rgba(255, 255, 255, 0.9);
+
+  @media (max-width: 767px) {
+    font-size: var(--text-xl);
+  }
+}
+
+.hero-description {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.intro-content {
+  text-align: center;
+
+  h2 {
+    margin-bottom: var(--space-lg);
+  }
+
+  p {
+    max-width: 70ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /* Card - primary content container */
 .card {
   background-color: var(--color-surface);
