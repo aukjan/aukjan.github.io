@@ -1,6 +1,7 @@
 ---
 layout: portfolio
 title: "Product-Market Fit Pivot"
+description: "Leading product pivot that discovered new market segment, growing monthly active users 5x and achieving product-market fit in 6 months."
 date: 2022-10-01
 role: "Head of Product"
 company_context: "Consumer Marketplace (Seed stage, 15-person team)"

@@ -1,6 +1,7 @@
 ---
 layout: portfolio
 title: "Platform Scaling for Hypergrowth"
+description: "How I rebuilt an e-commerce platform architecture to handle 10x user growth while reducing infrastructure costs 40% and achieving 99.9% uptime."
 date: 2023-06-01
 role: "Chief Technology Officer"
 company_context: "E-commerce Startup (Series B, 50-person team)"

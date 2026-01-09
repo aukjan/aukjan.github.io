@@ -1,6 +1,7 @@
 ---
 layout: portfolio
 title: "Real-Time Data Infrastructure"
+description: "Building real-time data pipelines that reduced latency from hours to seconds while processing 10M+ daily events for customer analytics."
 date: 2021-09-01
 role: "Engineering Manager"
 company_context: "B2B SaaS Platform (Series A, 30-person team)"

@@ -1,6 +1,7 @@
 ---
 layout: portfolio
 title: "UX Transformation for Enterprise Adoption"
+description: "Redesigning complex enterprise product with user-centered design, reducing onboarding time 60% and increasing feature adoption 45%."
 date: 2021-05-01
 role: "VP of Product"
 company_context: "B2B SaaS Platform (Series B, 80-person team)"

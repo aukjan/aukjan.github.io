@@ -1,6 +1,7 @@
 ---
 layout: portfolio
 title: "Marketplace Growth Strategy"
+description: "Scaling marketplace supply side from 500 to 5,000 active sellers while maintaining quality through algorithmic scoring and seller success programs."
 date: 2020-06-01
 role: "Head of Product & Growth"
 company_context: "B2C Marketplace (Series A, 40-person team)"

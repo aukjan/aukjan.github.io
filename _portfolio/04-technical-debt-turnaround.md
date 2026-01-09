@@ -1,6 +1,7 @@
 ---
 layout: portfolio
 title: "Technical Debt Turnaround"
+description: "Systematically reducing technical debt 60% while maintaining product velocity, transforming a legacy codebase from liability to asset."
 date: 2020-11-01
 role: "Senior Engineering Lead"
 company_context: "Legacy Software Company (Post-acquisition integration)"

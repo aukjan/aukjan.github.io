@@ -1,6 +1,7 @@
 ---
 layout: portfolio
 title: "Enterprise Security Architecture Overhaul"
+description: "Leading enterprise security transformation: achieving SOC 2 Type II certification and implementing zero-trust architecture across 50+ microservices."
 date: 2022-03-01
 role: "Head of Engineering"
 company_context: "Enterprise SaaS Company (Series C, 200-person team)"
