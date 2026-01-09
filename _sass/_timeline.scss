@@ -1,0 +1,258 @@
+// ============================================================================
+// Timeline Component
+// ============================================================================
+//
+// Vertical timeline with alternating left/right cards (desktop)
+// Stacked layout with left-side line (mobile)
+//
+// Usage:
+//   <section class="timeline">
+//     <div class="timeline-year"><h2>2024</h2></div>
+//     <ol class="timeline-list">
+//       <li class="timeline-item">
+//         <article class="timeline-card">...</article>
+//       </li>
+//     </ol>
+//   </section>
+
+// Timeline container
+.timeline {
+  position: relative;
+  max-width: var(--container-md);
+  margin: 0 auto;
+  padding: var(--space-2xl) var(--space-md);
+
+  // Center vertical line (desktop)
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--color-border);
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+}
+
+// Year markers
+.timeline-year {
+  position: relative;
+  text-align: center;
+  margin: var(--space-2xl) 0 var(--space-xl);
+
+  h2 {
+    display: inline-block;
+    background: var(--color-background);
+    padding: 0 var(--space-md);
+    font-size: var(--text-2xl);
+    font-weight: var(--font-bold);
+    color: var(--color-primary);
+    position: relative;
+    z-index: 2;
+  }
+
+  // Dot on timeline
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background: var(--color-primary);
+    border: 4px solid var(--color-background);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+}
+
+// Timeline list (ordered list)
+.timeline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+// Timeline items (list items containing cards)
+.timeline-item {
+  display: flex;
+  margin-bottom: var(--space-2xl);
+
+  // Odd items: cards on left side
+  &:nth-child(odd) {
+    justify-content: flex-end;
+
+    .timeline-card {
+      width: calc(50% - 40px);
+      margin-right: 40px;
+
+      // Connector dot (right side of card)
+      &::before {
+        right: -46px;
+      }
+    }
+  }
+
+  // Even items: cards on right side
+  &:nth-child(even) {
+    justify-content: flex-start;
+
+    .timeline-card {
+      width: calc(50% - 40px);
+      margin-left: 40px;
+
+      // Connector dot (left side of card)
+      &::before {
+        left: -46px;
+      }
+    }
+  }
+}
+
+// Timeline cards (extend existing card component)
+.timeline-card {
+  // Inherit card styles from design system
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  position: relative;
+  z-index: 1;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  // Connector dot to timeline
+  &::before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    width: 12px;
+    height: 12px;
+    background: var(--color-primary);
+    border: 3px solid var(--color-background);
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  // Hover effect
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  // Card content elements
+  time {
+    display: block;
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-xs);
+  }
+
+  h3 {
+    font-size: var(--text-xl);
+    font-weight: var(--font-bold);
+    color: var(--color-text);
+    margin: 0 0 var(--space-xs);
+    font-family: var(--font-sans);
+  }
+
+  .company-context {
+    font-size: var(--text-sm);
+    color: var(--color-text-light);
+    margin-bottom: var(--space-sm);
+  }
+
+  .role {
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--color-primary);
+    margin-bottom: var(--space-sm);
+  }
+
+  .card-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+    flex-wrap: wrap;
+  }
+
+  .summary {
+    font-size: var(--text-base);
+    color: var(--color-text);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-md);
+  }
+
+  .card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--color-primary-dark);
+    }
+
+    &::after {
+      content: '→';
+    }
+  }
+}
+
+// Mobile responsive layout
+@media (max-width: 767px) {
+  .timeline {
+    padding: var(--space-xl) var(--space-md);
+
+    // Move line to left side
+    &::before {
+      left: 20px;
+      transform: translateX(0);
+    }
+  }
+
+  .timeline-year {
+    text-align: left;
+    padding-left: 60px;
+    margin: var(--space-xl) 0 var(--space-md);
+
+    h2 {
+      background: transparent;
+      padding: 0;
+    }
+
+    // Move dot to left line
+    &::before {
+      left: 20px;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  // Stack all cards to the right of line
+  .timeline-item {
+    &:nth-child(odd),
+    &:nth-child(even) {
+      justify-content: flex-start;
+
+      .timeline-card {
+        width: calc(100% - 60px);
+        margin-left: 60px;
+        margin-right: 0;
+
+        // All connector dots on left
+        &::before {
+          left: -46px;
+          right: auto;
+        }
+      }
+    }
+  }
+}
