@@ -206,6 +206,41 @@ Transform existing Jekyll blog into modern personal branding site.
 
 ---
 
+## Phase 4.1: Fix CSS URL for Sub Pages ✅ COMPLETE (1/1 plan)
+
+**Goal:** Fix CSS loading issue on sub pages (urgent bug fix)
+
+**Why Now:** Discovered after Phase 4 completion - CSS paths not working correctly for pages in subdirectories
+
+**Depends on:** Phase 4
+
+**Deliverables:**
+- ✅ Fixed CSS links in _includes/head.html to use relative_url filter
+- ✅ Fixed icon/favicon links to use relative_url filter
+- ✅ Audited all other asset references (none found needing fixes)
+- ✅ Local build and testing verified (5 representative pages)
+- ✅ Pushed to GitHub and verified on live site
+- ✅ All nested pages now load CSS correctly (no more 404 errors)
+- ✅ Portfolio case study pages now fully styled
+
+**Plans:**
+- ✅ phase4.1-fix-asset-urls-PLAN.md (complete)
+
+**Root Cause:**
+Direct `{{ site.baseurl }}` concatenation generated relative paths on nested pages, causing 404 errors. Solution: Use Jekyll's `relative_url` filter for absolute path generation.
+
+**Validation:**
+- ✅ All 4 asset references fixed (2 CSS, 2 icons)
+- ✅ Generated HTML contains absolute paths on all pages
+- ✅ 5 pages tested locally (root + nested depths)
+- ✅ 5 pages verified on live site (https://aukjan.vanbelkum.nl/)
+- ✅ CSS files load with HTTP 200 status
+- ✅ Portfolio case studies now professionally styled
+- ✅ Comprehensive SUMMARY.md documentation created
+- ✅ 5 total commits (one per task)
+
+---
+
 ## Phase 5: Thought Leadership Platform
 
 **Goal:** Create content platform for articles and insights

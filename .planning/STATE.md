@@ -20,12 +20,31 @@ Transform existing Jekyll blog into modern personal branding site.
 | 2. Design System & Architecture | ✅ Complete | 100% | 3/3 |
 | 3. Core Pages & Content Structure | ✅ Complete | 100% | 3/3 |
 | 4. Portfolio & Case Studies | ✅ Complete | 100% | 3/3 |
+| 4.1. Fix CSS URL for Sub Pages | ✅ Complete | 100% | 1/1 |
 | 5. Thought Leadership Platform | 🔜 Pending | 0% | 0/0 |
 | 6. Polish & Launch | 🔜 Pending | 0% | 0/0 |
 
 ---
 
 ## Recent Activity
+
+**2026-01-12**
+- ✅ Completed phase4.1-fix-asset-urls-PLAN.md:
+  - Fixed CSS links in _includes/head.html to use relative_url filter
+  - Fixed icon/favicon links to use relative_url filter
+  - Audited all other asset references (none found needing fixes)
+  - Local build and testing verified (5 representative pages)
+  - Pushed to GitHub and verified on live site
+  - All nested pages now load CSS correctly (no more 404 errors)
+  - Portfolio case study pages now fully styled (was completely broken)
+  - 5 atomic commits, comprehensive SUMMARY.md created
+- **Phase 4.1 COMPLETE! 🎉** Urgent bug fix executed:
+  - Root cause: Direct baseurl concatenation generated relative paths on nested pages
+  - Solution: Use Jekyll's relative_url filter for absolute path generation
+  - Impact: Fixed CSS loading on 100% of pages (root + nested)
+  - Verified: 5 pages tested locally and on live site (https://aukjan.vanbelkum.nl/)
+  - Critical success: Portfolio case studies now professionally styled
+  - Total: 5 commits + comprehensive documentation
 
 **2026-01-09**
 - ✅ Completed phase4-navigation-PLAN.md:
@@ -190,6 +209,14 @@ Transform existing Jekyll blog into modern personal branding site.
 
 ---
 
+## Roadmap Evolution
+
+| Date | Change | Reason |
+|------|--------|--------|
+| 2026-01-09 | Phase 4.1 inserted after Phase 4: Fix CSS URL for sub pages (URGENT) | Discovered CSS loading issue on sub pages after Phase 4 completion |
+
+---
+
 ## Key Decisions Log
 
 | Date | Decision | Rationale |
@@ -221,24 +248,24 @@ None - all phases planned and ready for execution.
 
 ## Next Steps
 
-**Phase 4 Complete! 🎉**
+**Phase 4.1 Complete! 🎉**
 
-All Phase 4 deliverables achieved:
-- ✅ Portfolio timeline infrastructure built with Jekyll collection
-- ✅ Timeline CSS component (alternating desktop, stacked mobile)
-- ✅ Portfolio landing page at /portfolio/ with year grouping
-- ✅ Portfolio layout template for case study pages
-- ✅ 7 placeholder case studies (4 technical, 3 product)
-- ✅ 6-part case study structure implemented
-- ✅ Category badges (Technical/Product) with color coding
-- ✅ Portfolio integrated into header and footer navigation
-- ✅ SEO meta descriptions on all portfolio pages (8 total)
-- ✅ JSON-LD structured data on all case studies (7 pages)
-- ✅ Homepage portfolio CTA ("Proven Track Record")
-- ✅ Accessibility testing complete (WCAG 2.1 AA)
-- ✅ Responsive testing across all devices
-- ✅ Comprehensive documentation (README + design system)
-- ✅ All 85 verification tests passed
+All Phase 4.1 deliverables achieved:
+- ✅ Fixed CSS loading issue on all nested pages
+- ✅ Updated all asset references to use relative_url filter
+- ✅ Tested 5 representative pages (root + nested depths)
+- ✅ Verified on live site (https://aukjan.vanbelkum.nl/)
+- ✅ Portfolio case studies now properly styled
+- ✅ Comprehensive documentation in SUMMARY.md
+
+**Site Status: Production Ready**
+
+All phases 1-4.1 complete:
+- ✅ Phase 1: Foundation & Cleanup
+- ✅ Phase 2: Design System & Architecture
+- ✅ Phase 3: Core Pages & Content Structure
+- ✅ Phase 4: Portfolio & Case Studies
+- ✅ Phase 4.1: Fix CSS URL for Sub Pages (urgent fix)
 
 **Phase 5 Ready to Plan**
 
@@ -253,4 +280,4 @@ Next: Begin Phase 5 planning with `/gsd:discuss-phase 5` or `/gsd:plan-phase 5`
 
 ---
 
-*Last updated: 2026-01-09*
+*Last updated: 2026-01-12*
