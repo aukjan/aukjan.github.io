@@ -241,6 +241,40 @@ Direct `{{ site.baseurl }}` concatenation generated relative paths on nested pag
 
 ---
 
+## Phase 4.2: Align Homepage with LinkedIn Profile (1/1 plan)
+
+**Goal:** Update homepage content to match current LinkedIn profile positioning
+
+**Why Now:** LinkedIn profile is more current than site; need consistency before Phase 5/6
+
+**Depends on:** Phase 4.1
+
+**Deliverables:**
+- Add "builder at heart" identity to hero section
+- Include "22 years building products" experience
+- Reference cybersecurity as domain expertise
+- Add email contact (aukjan@vanbelkum.nl) prominently
+- Warm up tone to match LinkedIn's approachable style
+- Maintain Phase 3 startup/scaleup positioning
+
+**Plans:**
+- [ ] phase4.2-linkedin-alignment-PLAN.md
+
+**Context Captured:**
+- phase4.2-CONTEXT.md documents alignment vision
+- phase4.2-RESEARCH.md identifies 6 alignment gaps
+
+**Validation:**
+- Builder identity present in hero/intro
+- 22 years experience mentioned
+- Cybersecurity domain visible (but secondary)
+- Email visible and clickable
+- Tone warmer and approachable
+- Design system unchanged
+- Responsive across all breakpoints
+
+---
+
 ## Phase 5: Thought Leadership Platform
 
 **Goal:** Create content platform for articles and insights
